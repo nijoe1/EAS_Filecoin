@@ -1,0 +1,14 @@
+export { AggregateSchemaNameArgs } from "./AggregateSchemaNameArgs";
+export { CreateManySchemaNameArgs } from "./CreateManySchemaNameArgs";
+export { CreateOneSchemaNameArgs } from "./CreateOneSchemaNameArgs";
+export { DeleteManySchemaNameArgs } from "./DeleteManySchemaNameArgs";
+export { DeleteOneSchemaNameArgs } from "./DeleteOneSchemaNameArgs";
+export { FindFirstSchemaNameArgs } from "./FindFirstSchemaNameArgs";
+export { FindFirstSchemaNameOrThrowArgs } from "./FindFirstSchemaNameOrThrowArgs";
+export { FindManySchemaNameArgs } from "./FindManySchemaNameArgs";
+export { FindUniqueSchemaNameArgs } from "./FindUniqueSchemaNameArgs";
+export { FindUniqueSchemaNameOrThrowArgs } from "./FindUniqueSchemaNameOrThrowArgs";
+export { GroupBySchemaNameArgs } from "./GroupBySchemaNameArgs";
+export { UpdateManySchemaNameArgs } from "./UpdateManySchemaNameArgs";
+export { UpdateOneSchemaNameArgs } from "./UpdateOneSchemaNameArgs";
+export { UpsertOneSchemaNameArgs } from "./UpsertOneSchemaNameArgs";
