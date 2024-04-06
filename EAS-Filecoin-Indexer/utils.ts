@@ -37,28 +37,28 @@ if (!CHAIN_ID) {
 }
 
 export const EAS_CHAIN_CONFIGS: EASChainConfig[] = [
-  // {
-  //   chainId: 314,
-  //   chainName: "filecoin",
-  //   subdomain: "",
-  //   version: "0.26",
-  //   contractAddress: "0xC2679fBD37d54388Ce493F1DB75320D236e1815e",
-  //   schemaRegistryAddress: "0x0a7E2Ff54e76B8E6659aedc9103FB21c038050D0",
-  //   etherscanURL: "https://calibration.filfox.info/en/message/",
-  //   contractStartBlock: 2958570,
-  //   rpcProvider: `https://filfox.info/rpc/v1`,
-  // },
   {
-    chainId: 314159,
+    chainId: 314,
     chainName: "filecoin",
     subdomain: "",
     version: "1.3.0",
-    contractAddress: "0xA5f3029196241CDB315118EEfc9c2F94d37d373f",
-    schemaRegistryAddress: "0xBc58b8bd555A63c36Cff898604e318dF90B166d2",
-    etherscanURL: "https://calibration.filfox.info/en/message/",
-    contractStartBlock: 1495437,
-    rpcProvider: `https://calibration.filfox.info/rpc/v1`,
+    contractAddress: "0x81Cb1951C928eCaC93268cd45A1E6E292afA62DA",
+    schemaRegistryAddress: "0xea88c04fff67399C1605F286484698DD99C9c943",
+    etherscanURL: "https://filfox.info/en/message/",
+    contractStartBlock: 3800286,
+    rpcProvider: `https://api.node.glif.io/rpc/v1`,
   },
+  // {
+  //   chainId: 314159,
+  //   chainName: "filecoin",
+  //   subdomain: "",
+  //   version: "1.3.0",
+  //   contractAddress: "0xA5f3029196241CDB315118EEfc9c2F94d37d373f",
+  //   schemaRegistryAddress: "0xBc58b8bd555A63c36Cff898604e318dF90B166d2",
+  //   etherscanURL: "https://calibration.filfox.info/en/message/",
+  //   contractStartBlock: 1495437,
+  //   rpcProvider: `https://calibration.filfox.info/rpc/v1`,
+  // },
 ];
 
 const activeChainConfig = EAS_CHAIN_CONFIGS.find(

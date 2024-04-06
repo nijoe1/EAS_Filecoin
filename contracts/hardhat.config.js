@@ -8,19 +8,35 @@ const PRIVATE_KEY = process.env.PRIVATE_KEY;
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
   solidity: {
-    version: '0.8.19',
+    version: "0.8.19",
     settings: {
+      evmVersion: "paris",
+      libraries: {},
+      metadata: {
+        bytecodeHash: "none",
+        useLiteralContent: true,
+      },
       optimizer: {
         enabled: true,
-        runs: 1000000
+        runs: 1000000,
       },
-      metadata: {
-        bytecodeHash: 'none'
-      }
-    }
+      remappings: [],
+      outputSelection: {
+        "*": {
+          "*": [
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "devdoc",
+            "userdoc",
+            "metadata",
+            "abi",
+          ],
+        },
+      },
+    },
   },
-  defaultNetwork: "calibration",
-//  defaultNetwork: "filecoin",
+  // defaultNetwork: "calibration",
+  defaultNetwork: "filecoin",
 
   networks: {
     filecoin: {

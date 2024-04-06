@@ -20,13 +20,13 @@ module.exports = async ({ deployments }) => {
 
 
   //deploy SchemaRegistry
-  const TAS = await deploy("EAS", {
+  const EAS = await deploy("EAS", {
     from: wallet.address,
     args: [SchemaRegistry.address],
     log: true,
   });
 
-  console.log("TAS deployed to:", TAS.address);
+  console.log("EAS deployed to:", EAS.address);
 };
 
 
