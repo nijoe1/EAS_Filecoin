@@ -1,12 +1,12 @@
 const { Pool } = require("pg");
 
 const pool = new Pool({
-    user: 'postgres',
-    host: '52.47.54.119', // Use the IP address of the PostgreSQL container
-    database: 'eas-index',
-    password: 'postgresPassword',
-    port: 32768,
-  });
+  user: "postgres",
+  host: "13.36.214.194", // Use the IP address of the PostgreSQL container
+  database: "eas-index",
+  password: "postgresPassword",
+  port: 32772,
+});
 // Query the Schema table
 pool.query('SELECT * FROM "Schema"', (err, res) => {
   if (err) {

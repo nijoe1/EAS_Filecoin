@@ -22,7 +22,7 @@ services:
     depends_on:
       - eas-postgres
     ports:
-      - "3001:4000"
+      - "<database container mapped port>:4000"
 
 volumes:
   postgres_data:

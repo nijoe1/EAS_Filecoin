@@ -46,19 +46,8 @@ export const EAS_CHAIN_CONFIGS: EASChainConfig[] = [
     schemaRegistryAddress: "0xea88c04fff67399C1605F286484698DD99C9c943",
     etherscanURL: "https://filfox.info/en/message/",
     contractStartBlock: 3800286,
-    rpcProvider: `https://api.node.glif.io/rpc/v1`,
+    rpcProvider: `https://rpc.ankr.com/filecoin`,
   },
-  // {
-  //   chainId: 314159,
-  //   chainName: "filecoin",
-  //   subdomain: "",
-  //   version: "1.3.0",
-  //   contractAddress: "0xA5f3029196241CDB315118EEfc9c2F94d37d373f",
-  //   schemaRegistryAddress: "0xBc58b8bd555A63c36Cff898604e318dF90B166d2",
-  //   etherscanURL: "https://calibration.filfox.info/en/message/",
-  //   contractStartBlock: 1495437,
-  //   rpcProvider: `https://calibration.filfox.info/rpc/v1`,
-  // },
 ];
 
 const activeChainConfig = EAS_CHAIN_CONFIGS.find(

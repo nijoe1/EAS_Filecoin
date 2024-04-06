@@ -42,7 +42,7 @@ async function main() {
   //   .catch(error => console.error('Error fetching data:', error));
 
   await axios
-    .get("http://52.47.54.119:3001", {
+    .get("http://13.36.214.194:3001/", {
       params: { query },
     })
     .then((response) => console.log(response.data.data))
