@@ -48,6 +48,17 @@ export const EAS_CHAIN_CONFIGS: EASChainConfig[] = [
     contractStartBlock: 3800286,
     rpcProvider: `https://rpc.ankr.com/filecoin`,
   },
+  {
+    chainId: 1088,
+    chainName: "metis",
+    subdomain: "",
+    version: "1.3.0",
+    contractAddress: "0x5E3FF1a3B34c06Beb247b38484067c845cfe6fAE",
+    schemaRegistryAddress: "0xa4Ab012Ba80B127E5B543719FFb50363D78C2564",
+    etherscanURL: "https://explorer.metis.io/",
+    contractStartBlock: 19200000,
+    rpcProvider: `https://metis-mainnet.g.alchemy.com/v2/${process.env.ALCHEMY_API_KEY}`,
+  },
 ];
 
 const activeChainConfig = EAS_CHAIN_CONFIGS.find(

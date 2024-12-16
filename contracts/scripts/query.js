@@ -32,21 +32,21 @@ const query = `
 `;
 async function main() {
   // // Make a request to the GraphQL endpoint
-  // fetch('http://172.18.0.3:4000/', {
-  //   method: 'POST',
-  //   headers: { 'Content-Type': 'application/json' },
-  //   body: JSON.stringify({ query }),
-  // })
-  //   .then(response => response.json())
-  //   .then(data => console.log(data))
-  //   .catch(error => console.error('Error fetching data:', error));
+  fetch('http://localhost:4000/', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ query }),
+  })
+    .then(response => response.json())
+    .then(data => console.log(JSON.stringify(data)))
+    .catch(error => console.error('Error fetching data:', error));
 
-  await axios
-    .get("http://13.36.214.194:3001/", {
-      params: { query },
-    })
-    .then((response) => console.log(response.data.data))
-    .catch((error) => console.error("Error fetching data:", error));
+  // await axios
+  //   .get("http://13.36.214.194:3001/", {
+  //     params: { query },
+  //   })
+  //   .then((response) => console.log(response.data.data))
+  //   .catch((error) => console.error("Error fetching data:", error));
 }
 
 main().catch((error) => {

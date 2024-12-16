@@ -11,8 +11,13 @@ ENV CHAIN_ID=${CHAIN_ID}
 
 COPY . .
 
+COPY abis/eas.json /app/abis/eas.json
+COPY abis/easSchema.json /app/abis/easSchema.json
+
 COPY entrypoint.sh /app/entrypoint.sh
-RUN apk update && apk add --no-cache postgresql-client
+# RUN apk update && apk add --no-cache postgresql-client
+
+RUN apk update && apk add --no-cache openssl
 RUN chmod +x /app/entrypoint.sh
 RUN yarn install
 ENTRYPOINT ["/app/entrypoint.sh"]
